@@ -1,0 +1,84 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+html {
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#address {
+  border: 1px solid rgb(149, 28, 181);
+  border-radius: 5px;
+
+  sup {
+    color: red
+  }
+}
+
+a:focus, a:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#weather {
+  color: white;
+  border-radius: 10px;
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #location {
+    span {
+      font-size: 2.5em;
+    }
+    #dateTime {
+      font-size: 1.2em;
+      padding-left: 5%;
+    }
+  }
+
+  sup {
+    font-size: 0.4em;
+    position: absolute;
+    top: 30%;
+  }
+
+  #feel, #temp, .timesOfDayTemp {
+    position: relative;
+  }
+
+  #temp {
+    font-size: 4.1em;
+  }
+
+  .timesOfDayTemp {
+    font-size: 2.5em;
+  }
+
+  .boldText {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .dayOfWeek {
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+}
